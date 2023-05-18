@@ -14,6 +14,7 @@
 		28E949332A15FD3E0090905A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28E949312A15FD3E0090905A /* LaunchScreen.storyboard */; };
 		28E9493D2A1600B90090905A /* ColorsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E9493C2A1600B90090905A /* ColorsTableVC.swift */; };
 		28E9493F2A1601190090905A /* ColorsDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E9493E2A1601190090905A /* ColorsDetailVC.swift */; };
+		28E949432A1625DC0090905A /* UIColor+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E949422A1625DC0090905A /* UIColor+ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		28E949342A15FD3E0090905A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28E9493C2A1600B90090905A /* ColorsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsTableVC.swift; sourceTree = "<group>"; };
 		28E9493E2A1601190090905A /* ColorsDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsDetailVC.swift; sourceTree = "<group>"; };
+		28E949422A1625DC0090905A /* UIColor+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				28E949262A15FD3D0090905A /* AppDelegate.swift */,
 				28E949282A15FD3D0090905A /* SceneDelegate.swift */,
 				28E9493C2A1600B90090905A /* ColorsTableVC.swift */,
+				28E949422A1625DC0090905A /* UIColor+ext.swift */,
 				28E9493E2A1601190090905A /* ColorsDetailVC.swift */,
 				28E9492C2A15FD3D0090905A /* Main.storyboard */,
 				28E9492F2A15FD3E0090905A /* Assets.xcassets */,
@@ -145,6 +148,7 @@
 				28E9493F2A1601190090905A /* ColorsDetailVC.swift in Sources */,
 				28E949272A15FD3D0090905A /* AppDelegate.swift in Sources */,
 				28E949292A15FD3D0090905A /* SceneDelegate.swift in Sources */,
+				28E949432A1625DC0090905A /* UIColor+ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
