@@ -16,20 +16,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSO-xi-omK">
-                                <rect key="frame" x="169.5" y="430.5" width="75" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="2lJ-7F-kO3">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ColorCell" id="Af2-Hs-nXL">
+                                        <rect key="frame" x="0.0" y="50" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Af2-Hs-nXL" id="rO7-Nm-jAh">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
-                                    <action selector="tempButtonTapped:" destination="dxg-9H-WZC" eventType="touchUpInside" id="un3-Mq-HZZ"/>
+                                    <outlet property="dataSource" destination="dxg-9H-WZC" id="uSR-iX-FAT"/>
+                                    <outlet property="delegate" destination="dxg-9H-WZC" id="ckS-6U-ny3"/>
                                 </connections>
-                            </button>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jn4-Y3-H6q"/>
-                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="kSO-xi-omK" firstAttribute="centerY" secondItem="Oz3-sN-MUQ" secondAttribute="centerY" id="IXA-iy-UAc"/>
-                            <constraint firstItem="kSO-xi-omK" firstAttribute="centerX" secondItem="Oz3-sN-MUQ" secondAttribute="centerX" id="kt7-c2-pt6"/>
+                            <constraint firstAttribute="bottom" secondItem="2lJ-7F-kO3" secondAttribute="bottom" id="JUH-wK-q91"/>
+                            <constraint firstItem="2lJ-7F-kO3" firstAttribute="leading" secondItem="jn4-Y3-H6q" secondAttribute="leading" id="Sj5-ZN-GeO"/>
+                            <constraint firstItem="2lJ-7F-kO3" firstAttribute="top" secondItem="Oz3-sN-MUQ" secondAttribute="top" id="aVn-MJ-jWG"/>
+                            <constraint firstItem="jn4-Y3-H6q" firstAttribute="trailing" secondItem="2lJ-7F-kO3" secondAttribute="trailing" id="vU9-G0-EeD"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Colors" id="j1J-Xe-ZK7"/>
@@ -79,9 +91,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
