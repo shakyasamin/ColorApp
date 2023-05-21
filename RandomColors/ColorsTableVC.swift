@@ -22,7 +22,7 @@ class ColorsTableVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         addRandomColors()
-        // Do any additional setup after loading the view.
+        
     }
     
     func addRandomColors(){
@@ -36,7 +36,6 @@ class ColorsTableVC: UIViewController {
         let destVC = segue.destination as! ColorsDetailVC
         destVC.color = sender as? UIColor
     }
-   
   
 }
 
@@ -47,7 +46,6 @@ extension ColorsTableVC:UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: Cells.colorCell ) else { return UITableViewCell()}
-        
         cell.backgroundColor = colors[indexPath.row]
         return cell
         
